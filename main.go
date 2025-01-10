@@ -12,7 +12,7 @@ import (
 )
 
 type Men struct {
-	Rank    int    `json:"rank"`
+	Rank    *int   `json:"rank"`
 	Name    string `json:"name"`
 	Country string `json:"country"`
 }
