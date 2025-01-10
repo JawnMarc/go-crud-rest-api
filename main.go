@@ -103,7 +103,7 @@ func createUser(db *sql.DB) http.HandlerFunc {
 			log.Fatal(err)
 		}
 		// insert into database
-		_, err = db.Exec("INSER INTO men (name, country) VALUES ($1, $2)", men.Name, men.Country)
+		_, err = db.Exec("INSERT INTO men (name, country) VALUES ($1, $2)", men.Name, men.Country)
 		if err != nil {
 			log.Fatal(err)
 		}
